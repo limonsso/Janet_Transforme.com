@@ -30,6 +30,10 @@ if (isset($_GET['deco']))
         <?php
             require_once("Pages/Backend/".$Pages[$index]);
         ?>
+
+
+
+
     </div>
     <!-- /.col-lg-8 -->
     <div class="col-lg-4">
