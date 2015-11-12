@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - db_janetransforme@localhost" uuid="77b26580-effd-4ae7-9a8b-ddb7b84aaa40">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>db_janetransforme.*</schema-pattern>
+      <default-schemas>db_janetransforme.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - db_janettransforme@localhost" uuid="fc6e8e27-fa51-42ad-834f-5aa6c2a718ef">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>db_janettransforme.*</schema-pattern>
+      <default-schemas>db_janettransforme.*</default-schemas>
+    </data-source>
+  </component>
+</project>

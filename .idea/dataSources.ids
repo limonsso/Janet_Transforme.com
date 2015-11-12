@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - db_janetransforme@localhost" uuid="77b26580-effd-4ae7-9a8b-ddb7b84aaa40">
+    <database-info product="MySQL" version="5.6.15-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="db_janetransforme"/>
+    <table name="admin" schema="" catalog="db_janetransforme" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nom" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="statu" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_cnx" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="login" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="passwd" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="biographie" schema="" catalog="db_janetransforme" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Contenu" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="image" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_MaJ" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="portfolio" schema="" catalog="db_janetransforme" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="image" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="caption" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="date_MaJ" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+  <data-source name="MySQL - db_janettransforme@localhost" uuid="fc6e8e27-fa51-42ad-834f-5aa6c2a718ef">
+    <database-info product="MySQL" version="5.6.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="db_janettransforme"/>
+    <table name="admin" schema="" catalog="db_janettransforme" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nom" sqlType="VARCHAR" precision="225" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Prenom" sqlType="VARCHAR" precision="225" scale="0" nullable="false" jdbcType="12"/>
+      <column name="login" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="passwd" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="statu" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="last_cnx" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="login" unique="false" columns="login"/>
+      <index name="Nom" unique="false" columns="Nom"/>
+    </table>
+    <table name="biographie" schema="" catalog="db_janettransforme" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="img_path" sqlType="VARCHAR" precision="225" scale="0" nullable="false" jdbcType="12"/>
+      <column name="date_MaJ" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="evenement" schema="" catalog="db_janettransforme" type="TABLE">
+      <column name="idEvent" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="NomEvent" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Sous_titre" sqlType="VARCHAR" precision="225" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Date_create" sqlType="TIMESTAMP" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="idEvent"/>
+      <index name="idEvent_index" unique="false" columns="idEvent"/>
+    </table>
+    <table name="imgevent" schema="" catalog="db_janettransforme" type="TABLE">
+      <column name="idImg" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="ImgPath" sqlType="VARCHAR" precision="225" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Date_add" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="IdEvent" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="idImg"/>
+    </table>
+    <table name="portfolio" schema="" catalog="db_janettransforme" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="img_path" sqlType="VARCHAR" precision="225" scale="0" nullable="false" jdbcType="12"/>
+      <column name="caption" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Date_insert" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'SoftElegance';
+    src: url(../fonts/Soft%20Elegance.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'sweet';
+    src: url(../fonts/Sweethearts%20Love%20Letters_2.ttf);
+}
+
+body {
+
+    background-image: url("../img/Background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    background-color: #111111;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 20px;
+    margin-bottom: -35px;
+    border-bottom: solid 35px white;
+    width: 100%;
+}
+
+footer {
+    padding: 0px 150px;
+    font-family: "Century Gothic";
+    font-size: x-small;
+    float: left;
+    border-top: 1px #b1b1b1 solid;
+    width: 100%;
+    min-height: 50px;
+    color: white;
+    background-color: #111111;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 70%;
+    min-height: 50px;
+}
+
+/******************* Style menu ***************/
+.navbarmenu {
+    width: 100%;
+    min-height: 30px;
+    border-bottom: 1px #b1b1b1 solid;
+}
+
+.menu {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 35px;
+    /*margin-left: 20%;*/
+}
+
+.menu ul {
+
+    padding: 0; /* pas de marge intérieure */
+    margin: 0; /* ni extérieure */
+    list-style: none; /* on supprime le style par défaut de la liste */
+    line-height: 21px; /* on définit une hauteur pour chaque élément */
+    text-align: center; /* on centre le texte qui se trouve dans la liste */
+}
+
+.item {
+    font-family: SoftElegance;
+    font-size: large;
+    color: rgba(47, 47, 47, 0.82); /* couleur du texte */
+    text-decoration: none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+}
+
+.menu li {
+    float: left;
+    margin: 10px 15px;
+}
+
+.sous-menu {
+    position: absolute;
+    width: 210px;
+    border-bottom: 2px solid;
+    border-color: #b85390;
+    background-color: rgba(255, 255, 255, 0.91);
+    line-height: 10px;
+    display: none;
+}
+.menuitem:hover ul
+{
+    display: block;
+}
+.sous-menu li {
+    text-align: left;
+    width: 100%;
+    margin: 7px;
+}
+
+.sous-menu a {
+    font-family: SoftElegance;
+    font-size: large;
+    color: rgba(47, 47, 47, 0.82); /* couleur du texte */
+    text-decoration: none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.sous-menu a:hover {
+    text-decoration: none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+    color: #d159a6;
+}
+.item:hover, .item:focus {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    text-shadow: 0 0 65px rgba(154, 145, 112, 0.35);
+    text-decoration: none;
+    color: #ea59bf;
+}
+
+.hover {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    color: #ea59bf;
+}
+.item-connect{
+    padding: 7px 15px 3px;
+    float: left;
+    color: white;
+    background-color: #111111;
+    border-radius: 0px 5px 5px 0px ;
+}
+.item-connect a {
+    font-family: SoftElegance;
+    font-size: large;
+    color: rgba(252, 252, 252, 0.82); /* couleur du texte */
+    text-decoration: none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+}
+.item-connect a:hover, .item-connect a:focus {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    text-shadow: 0 0 65px rgba(154, 145, 112, 0.35);
+    text-decoration: none;
+    color: #ea59bf;
+}
+.item-inscrir{
+    border: 1px #000000 solid;
+    padding: 5px 25px 4px;
+    float: left;
+    border-radius: 5px 0px 0px 5px ;
+    background-color: #fcfcfc;
+}
+.item-inscrir a {
+    font-family: SoftElegance;
+
+    font-size: large;
+    color: rgba(0, 0, 0, 0.82); /* couleur du texte */
+    text-decoration: none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+}
+.item-inscrir a:hover, .item-inscrir a:focus {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    text-shadow: 0 0 65px rgba(154, 145, 112, 0.35);
+    text-decoration: none;
+    color: #ea59bf;
+}
+/******************* Fin de style menu ***************/
+.content {
+    margin-left:9%;
+    margin-right:9%;
+    width: 80%;
+    min-height: 650px;
+    height: auto;
+
+    background-color: rgba(252, 252, 252, 0.73);
+}
+
+.content-g {
+    width: 69%;
+    float: left;
+    min-height: 750px;
+    padding: 10px;
+}
+
+.content-d {
+    width: 30%;
+    float: right;
+    min-height: 150px;
+
+}
+
+.contain {
+    width: 100%;
+    font-family: "Century Gothic";
+    min-height: 150px;
+}
+
+.img-portrait {
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+    height: auto;
+    border: 5px solid #ffffff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.45);
+    transform: rotate(4deg);
+    -ms-transform: rotate(4deg); /* Internet Explorer */
+    -moz-transform: rotate(4deg); /* Firefox */
+    -webkit-transform: rotate(4deg); /* Safari et Chrome */
+    -o-transform: rotate(4deg); /* Opera */
+}
+
+.img-portrait img {
+    width: 100%;
+    height: 100%;
+}
+
+.titre-3 {
+    font-family: RobotoRegular;
+    color: #ea59bf;
+}
+
+.section-title {
+    border-top: 4px solid;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    display: inline-block;
+    padding: 20px 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    font-size: 20px;
+    background-color: #d159a6;
+}
+
+.section-title {
+    border-color: #b85390;
+}
+
+.navForfais td {
+    min-width: 50px;
+}
+ .erreur{
+    color: rgba(232, 0, 0, 0.65);
+    font-size: small;
+}
+#afficheErreur{
+    color: rgba(232, 0, 0, 0.65);
+    font-size: small;}
+.Monicone{
+    background-color: #818285;
+    width:70px;
+    height: 70px;
+    border: 1px #5d5d60 solid;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 20px 0PX;
+    border-radius: 100px;
+    align-content: center;
+    text-align: center;
+}
