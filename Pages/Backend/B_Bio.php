@@ -57,7 +57,7 @@ if(isset($_POST["BtnMaJBio"]))
                 <textarea id='content' name='contenueInter'></textarea>
             </div>
             <div id="afficheErreur"><?php if (isset($mesg2[0])){ echo "$mesg2[0]"; } ?></div>
-            <button class="btn btn-success" type="submit" name="BtnMaJBio">Mettre à jour</button>
+            <button class="btn btn-success" type="submit" name="BtnMaJBio">Mettre Ã  jour</button>
         </form>
     </div>
     <!-- /.panel-body -->
