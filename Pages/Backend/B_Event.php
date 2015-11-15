@@ -104,10 +104,6 @@
         });
     });
 
-
-    /**
-     * Created by remi on 18/01/15.
-     */
     (function(){
 
         function previewImage(file) {
